@@ -1,6 +1,6 @@
 {
-  "name": "brix-ui",
-  "version": "1.0.0",
+  "name": "brickwork-vue",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
