@@ -1,10 +1,20 @@
 <template>
-  <input
-    class="brix"
-    :value="modelValue"
-    :placeholder="placeholder"
-    @input="handleInput"
-  />
+  <fieldset class="brix">
+    <label
+      v-if="label"
+      class="brix"
+      for="input"
+    >
+      {{ label }}
+    </label>
+    <input
+      id="input"
+      class="brix"
+      :value="modelValue"
+      :placeholder="placeholder"
+      @input="handleInput"
+    />
+  </fieldset>
 </template>
 
 <script
@@ -15,6 +25,10 @@ defineProps({
   modelValue: {
     type: String,
     required: true,
+  },
+  label: {
+    type: String,
+    default: '',
   },
   placeholder: {
     type: String,
@@ -31,9 +45,25 @@ function handleInput(e: Event): void {
 </script>
 
 <style scoped>
+fieldset.brix {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+label.brix {
+  flex: 1;
+  width: 90px;
+  color: #540502;
+  font-size: 15px;
+  text-align: right;
+  cursor: default;
+}
+
 input.brix {
   display: inline-flex;
-  flex: 1;
+  flex: 2;
   flex-basis: 0%;
   align-items: center;
   justify-content: center;
@@ -41,16 +71,18 @@ input.brix {
   height: 35px;
   padding: 0 10px;
   border-radius: 4px;
-  box-shadow: #9f413d 0 0 0 1px;
+  box-shadow: #c99894 0 0 0 1px;
   color: #540502;
   font-size: 15px;
   line-height: 1;
 }
 
 input.brix:focus {
-  box-shadow: #9f413d 0 0 0 2px;
+  box-shadow: #c99894 0 0 0 2px;
 }
 
+fieldset,
+label,
 input {
   content: unset;
   quotes: unset;
