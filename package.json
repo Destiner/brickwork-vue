@@ -15,6 +15,9 @@
   ],
   "types": "./lib/types",
   "scripts": {
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint \"{src,test}/**/*.ts\"",
+    "lint:prettier": "prettier -c \"{src,test}/**/*.{json,js,ts}\"",
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly"
   },
   "keywords": [],
