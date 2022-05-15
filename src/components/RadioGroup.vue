@@ -32,7 +32,6 @@ defineProps({
 const emit = defineEmits(['update:modelValue']);
 
 function handleUpdate(newValue: Option) {
-  console.log(newValue);
   emit('update:modelValue', newValue);
 }
 </script>
