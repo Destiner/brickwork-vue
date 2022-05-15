@@ -2,7 +2,10 @@
   <button class="brix">{{ label }}</button>
 </template>
 
-<script lang="ts" setup>
+<script
+  lang="ts"
+  setup
+>
 defineProps({
   label: {
     type: String,

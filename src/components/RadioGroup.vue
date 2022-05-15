@@ -18,14 +18,20 @@
         :aria-checked="checked"
         :data-state="checked ? 'checked' : 'unchecked'"
       >
-        <span :data-state="'checked'" v-if="checked" />
+        <span
+          :data-state="'checked'"
+          v-if="checked"
+        />
       </button>
       <span class="label">{{ option.label }}</span>
     </RadioGroupOption>
   </RadioGroup>
 </template>
 
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 import { PropType } from 'vue';
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue';
 

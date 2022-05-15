@@ -7,7 +7,9 @@
     :data-state="dataState"
     @click="handleClick"
   >
-    <span v-if="modelValue" data-state="checked"
+    <span
+      v-if="modelValue"
+      data-state="checked"
       ><svg
         width="15"
         height="15"
@@ -25,7 +27,10 @@
   </button>
 </template>
 
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 import { computed } from 'vue';
 
 const props = defineProps({

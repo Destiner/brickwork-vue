@@ -7,7 +7,10 @@
   />
 </template>
 
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 defineProps({
   modelValue: {
     type: String,
