@@ -1,8 +1,23 @@
 <template>
-  <RadioGroup class="group" :modelValue="modelValue" @update:modelValue="handleUpdate">
+  <RadioGroup
+    class="group"
+    :modelValue="modelValue"
+    @update:modelValue="handleUpdate"
+  >
     <RadioGroupLabel class="group-label">Plan</RadioGroupLabel>
-    <RadioGroupOption v-for="option in options" v-slot="{ checked }" :value="option.value" class="option">
-      <button class="brix" type="button" role="radio" :aria-checked="checked" :data-state="checked ? 'checked' : 'unchecked'">
+    <RadioGroupOption
+      v-for="option in options"
+      v-slot="{ checked }"
+      :value="option.value"
+      class="option"
+    >
+      <button
+        class="brix"
+        type="button"
+        role="radio"
+        :aria-checked="checked"
+        :data-state="checked ? 'checked' : 'unchecked'"
+      >
         <span :data-state="'checked'" v-if="checked" />
       </button>
       <span class="label">{{ option.label }}</span>
@@ -12,11 +27,7 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue';
-import {
-  RadioGroup,
-  RadioGroupLabel,
-  RadioGroupOption,
-} from '@headlessui/vue';
+import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue';
 
 defineProps({
   modelValue: {
@@ -51,7 +62,7 @@ interface Option {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
 }
@@ -83,7 +94,7 @@ button > span {
 }
 
 button > span::after {
-  content: "";
+  content: '';
   display: block;
   width: 11px;
   height: 11px;

@@ -1,5 +1,10 @@
 <template>
-  <input class="brix" :value="modelValue" :placeholder="placeholder" @input="handleInput">
+  <input
+    class="brix"
+    :value="modelValue"
+    :placeholder="placeholder"
+    @input="handleInput"
+  />
 </template>
 
 <script setup lang="ts">
