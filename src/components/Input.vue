@@ -54,7 +54,6 @@ fieldset.brix {
 
 label.brix {
   flex: 1;
-  width: 90px;
   color: #540502;
   font-size: 15px;
   text-align: right;
