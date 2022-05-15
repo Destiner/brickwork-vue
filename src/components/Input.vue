@@ -48,7 +48,6 @@ function handleInput(e: Event): void {
 fieldset.brix {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
   gap: 20px;
 }
 
