@@ -1,5 +1,5 @@
 <template>
-  <RadioGroup class="group" v-model="modelValue">
+  <RadioGroup class="group" :modelValue="modelValue" @update:modelValue="handleUpdate">
     <RadioGroupLabel class="group-label">Plan</RadioGroupLabel>
     <RadioGroupOption v-for="option in options" v-slot="{ checked }" :value="option.value" class="option">
       <button class="brix" type="button" role="radio" :aria-checked="checked" :data-state="checked ? 'checked' : 'unchecked'">
@@ -29,7 +29,12 @@ defineProps({
   },
 });
 
-defineEmits(['update:modelValue']);
+const emit = defineEmits(['update:modelValue']);
+
+function handleUpdate(newValue: Option) {
+  console.log(newValue);
+  emit('update:modelValue', newValue);
+}
 </script>
 
 <script lang="ts">
