@@ -1,12 +1,13 @@
 <template>
   <RadioGroup
+    :model-value="modelValue"
     class="group"
-    :modelValue="modelValue"
-    @update:modelValue="handleUpdate"
+    @update:model-value="handleUpdate"
   >
     <RadioGroupLabel class="group-label">Plan</RadioGroupLabel>
     <RadioGroupOption
       v-for="option in options"
+      :key="option.value"
       v-slot="{ checked }"
       :value="option.value"
       class="option"
@@ -19,8 +20,8 @@
         :data-state="checked ? 'checked' : 'unchecked'"
       >
         <span
-          :data-state="'checked'"
           v-if="checked"
+          :data-state="'checked'"
         />
       </button>
       <span class="label">{{ option.label }}</span>
@@ -32,8 +33,8 @@
   setup
   lang="ts"
 >
-import { PropType } from 'vue';
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue';
+import { PropType } from 'vue';
 
 defineProps({
   modelValue: {
@@ -48,7 +49,7 @@ defineProps({
 
 const emit = defineEmits(['update:modelValue']);
 
-function handleUpdate(newValue: Option) {
+function handleUpdate(newValue: Option): void {
   emit('update:modelValue', newValue);
 }
 </script>

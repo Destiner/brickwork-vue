@@ -10,7 +10,8 @@
     <span
       v-if="modelValue"
       data-state="checked"
-      ><svg
+    >
+      <svg
         width="15"
         height="15"
         viewBox="0 0 15 15"
@@ -22,8 +23,9 @@
           fill="currentColor"
           fill-rule="evenodd"
           clip-rule="evenodd"
-        ></path></svg
-    ></span>
+        />
+      </svg>
+    </span>
   </button>
 </template>
 
@@ -44,7 +46,7 @@ const emit = defineEmits(['update:modelValue']);
 
 const dataState = computed(() => (props.modelValue ? 'checked' : 'unchecked'));
 
-function handleClick() {
+function handleClick(): void {
   emit('update:modelValue', !props.modelValue);
 }
 </script>
