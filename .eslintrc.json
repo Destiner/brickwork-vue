@@ -42,19 +42,12 @@
     "vue/component-api-style": ["error", ["script-setup"]],
     "vue/custom-event-name-casing": ["error", "kebab-case"],
     "vue/no-empty-component-block": "error",
+    "vue/multi-word-component-names": "off",
     "vue/singleline-html-element-content-newline": "off"
   },
   "settings": {
     "import/resolver": {
       "typescript": {}
     }
-  },
-  "overrides": [
-    {
-      "files": ["src/pages/**/*.vue"],
-      "rules": {
-        "vue/multi-word-component-names": "off"
-      }
-    }
-  ]
+  }
 }
