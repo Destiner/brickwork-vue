@@ -1,7 +1,7 @@
 <template>
   <RadioGroup class="group" v-model="modelValue">
     <RadioGroupLabel class="group-label">Plan</RadioGroupLabel>
-    <RadioGroupOption v-for="option in options" v-slot="{ checked }" :value="option" class="option">
+    <RadioGroupOption v-for="option in options" v-slot="{ checked }" :value="option.value" class="option">
       <button class="brix" type="button" role="radio" :aria-checked="checked" :data-state="checked ? 'checked' : 'unchecked'">
         <span :data-state="'checked'" v-if="checked" />
       </button>
