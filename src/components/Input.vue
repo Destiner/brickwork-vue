@@ -1,15 +1,13 @@
 <template>
-  <fieldset class="brix">
+  <fieldset>
     <label
       v-if="label"
-      class="brix"
       for="input"
     >
       {{ label }}
     </label>
     <input
       id="input"
-      class="brix"
       :value="modelValue"
       :placeholder="placeholder"
       @input="handleInput"
@@ -45,13 +43,15 @@ function handleInput(e: Event): void {
 </script>
 
 <style scoped>
-fieldset.brix {
+fieldset {
+  all: unset;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-label.brix {
+label {
+  all: unset;
   flex: 1;
   color: #540502;
   font-size: 15px;
@@ -59,7 +59,8 @@ label.brix {
   cursor: default;
 }
 
-input.brix {
+input {
+  all: unset;
   display: inline-flex;
   flex: 2;
   flex-basis: 0%;
@@ -75,13 +76,7 @@ input.brix {
   line-height: 1;
 }
 
-input.brix:focus {
+input:focus {
   box-shadow: #c99894 0 0 0 2px;
-}
-
-fieldset,
-label,
-input {
-  all: unset;
 }
 </style>

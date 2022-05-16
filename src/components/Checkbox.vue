@@ -2,7 +2,6 @@
   <div>
     <button
       id="checkbox"
-      class="brix"
       type="button"
       role="checkbox"
       :aria-checked="modelValue"
@@ -32,7 +31,6 @@
     <label
       v-if="label"
       for="checkbox"
-      class="brix"
     >
       {{ label }}
     </label>
@@ -72,7 +70,8 @@ div {
   gap: 15px;
 }
 
-button.brix {
+button {
+  all: unset;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,21 +82,17 @@ button.brix {
   box-shadow: #00000024 0 2px 10px;
 }
 
-button.brix > span {
+button > span {
   display: flex;
   color: #540502;
   pointer-events: none;
 }
 
-label.brix {
+label {
+  all: unset;
   color: #540502;
   font-size: 15px;
   text-align: left;
   cursor: default;
-}
-
-button,
-label {
-  all: unset;
 }
 </style>

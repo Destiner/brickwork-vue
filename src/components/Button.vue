@@ -1,5 +1,5 @@
 <template>
-  <button class="brix">{{ label }}</button>
+  <button>{{ label }}</button>
 </template>
 
 <script
@@ -15,7 +15,8 @@ defineProps({
 </script>
 
 <style scoped>
-button.brix {
+button {
+  all: unset;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -30,15 +31,11 @@ button.brix {
   line-height: 1;
 }
 
-button.brix:focus {
+button:focus {
   box-shadow: #290402 0 0 0 2px;
 }
 
-button.brix:hover {
+button:hover {
   background-color: #eee;
-}
-
-button {
-  all: unset;
 }
 </style>

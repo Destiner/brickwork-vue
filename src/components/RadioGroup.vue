@@ -13,7 +13,6 @@
       class="option"
     >
       <button
-        class="brix"
         type="button"
         role="radio"
         :aria-checked="checked"
@@ -80,7 +79,8 @@ interface Option {
   margin-bottom: 8px;
 }
 
-button.brix {
+button {
+  all: unset;
   width: 25px;
   height: 25px;
   border-radius: 100%;
@@ -110,9 +110,5 @@ button > span::after {
   padding-left: 15px;
   font-size: 15px;
   line-height: 1;
-}
-
-button {
-  all: unset;
 }
 </style>
