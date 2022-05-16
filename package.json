@@ -31,7 +31,7 @@
     "lint:eslint": "eslint \"src/**/*.{js,ts,vue}\"",
     "lint:stylelint": "stylelint \"src/**/*.{css,vue}\"",
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
-    "prepublishOnly": "npm run build"
+    "prepack": "npm run build"
   },
   "dependencies": {
     "@headlessui/vue": "^1.6.1"
