@@ -77,6 +77,7 @@ interface Option {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
+  outline: none;
 }
 
 button {
