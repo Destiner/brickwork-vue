@@ -84,7 +84,7 @@ button {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  background-color: white;
+  background-color: var(--color-radio-bg, white);
   box-shadow: #00000024 0 2px 10px;
 }
 
@@ -103,11 +103,12 @@ button > span::after {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color: #540502;
+  background-color: var(--color-radio, #540502);
 }
 
 .label {
   padding-left: 15px;
+  color: var(--color-label, #540502);
   font-size: 15px;
   line-height: 1;
 }

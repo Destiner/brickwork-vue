@@ -53,7 +53,7 @@ fieldset {
 label {
   all: unset;
   flex: 1;
-  color: #540502;
+  color: var(--color-label, #540502);
   font-size: 15px;
   text-align: right;
   cursor: default;
@@ -70,13 +70,13 @@ input {
   height: 35px;
   padding: 0 10px;
   border-radius: 4px;
-  box-shadow: #c99894 0 0 0 1px;
-  color: #540502;
+  box-shadow: var(--color-outline, #c99894) 0 0 0 1px;
+  color: var(--color-text, #540502);
   font-size: 15px;
   line-height: 1;
 }
 
 input:focus {
-  box-shadow: #c99894 0 0 0 2px;
+  box-shadow: var(--color-outline, #c99894) 0 0 0 2px;
 }
 </style>

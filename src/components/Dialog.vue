@@ -68,6 +68,6 @@ function close(): void {
   max-width: 384px;
   padding: 8px 16px;
   border-radius: 4px;
-  background: white;
+  background: var(--color-bg, white);
 }
 </style>

@@ -114,20 +114,20 @@ export { Option };
   height: var(--trigger-height);
   padding: 0 15px;
   border-radius: 4px;
-  background-color: white;
+  background-color: var(--color-trigger-bg, white);
   box-shadow: #00000024 0 2px 10px;
-  color: #540502;
+  color: var(--color-trigger-label, #540502);
   font-size: 13px;
   line-height: 1;
   gap: 5px;
 }
 
 .trigger:hover {
-  background-color: #eee;
+  background-color: var(--color-trigger-bg-hover, #eee);
 }
 
 .trigger:focus {
-  box-shadow: #290402 0 0 0 2px;
+  box-shadow: var(--color-outline, #290402) 0 0 0 2px;
 }
 
 .content {
@@ -156,7 +156,7 @@ export { Option };
   padding: 4px;
   overflow: auto;
   border-radius: 4px;
-  background: white;
+  background: var(--color-options-bg, white);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
   font-size: 1rem;
 }
@@ -170,7 +170,7 @@ export { Option };
   position: relative;
   padding: 0 25px;
   border-radius: 4px;
-  color: #540502;
+  color: var(--color-option-label, #540502);
   font-size: 12px;
   line-height: 25px;
   text-align: left;
@@ -179,8 +179,8 @@ export { Option };
 }
 
 .option.active {
-  background: #540502;
-  color: white;
+  background: var(--color-option-bg-active, #540502);
+  color: var(--color-option-label-active, white);
 }
 
 .option-label {

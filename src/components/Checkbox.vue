@@ -78,19 +78,19 @@ button {
   width: 25px;
   height: 25px;
   border-radius: 4px;
-  background-color: white;
+  background-color: var(--color-check-bg, white);
   box-shadow: #00000024 0 2px 10px;
 }
 
 button > span {
   display: flex;
-  color: #540502;
+  color: var(--color-check, #540502);
   pointer-events: none;
 }
 
 label {
   all: unset;
-  color: #540502;
+  color: var(--color-label, #540502);
   font-size: 15px;
   text-align: left;
   cursor: default;
