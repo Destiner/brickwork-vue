@@ -64,10 +64,11 @@ function close(): void {
 }
 
 .panel {
-  width: 100%;
-  max-width: 384px;
-  padding: 8px 16px;
-  border-radius: 4px;
+  width: 90vw;
+  max-width: 450px;
+  max-height: 85vh;
+  padding: 25px;
+  border-radius: 6px;
   background: var(--color-bg, white);
 }
 </style>
