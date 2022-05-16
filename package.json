@@ -1,8 +1,21 @@
 {
   "name": "brickwork-vue",
   "version": "0.2.2",
-  "description": "",
+  "description": "Customizable UI components for Vue 3",
+  "author": "Timur Badretdinov <destinerx@gmail.com>",
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Destiner/brickwork-vue.git"
+  },
   "type": "module",
+  "files": [
+    "lib/"
+  ],
   "exports": {
     ".": {
       "import": "./lib/brickwork-vue.es.js"
@@ -11,9 +24,6 @@
       "import": "./lib/style.css"
     }
   },
-  "files": [
-    "lib/"
-  ],
   "types": "./lib/types",
   "scripts": {
     "lint": "npm run lint:prettier && npm run lint:eslint && npm run lint:stylelint",
@@ -23,9 +33,6 @@
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@headlessui/vue": "^1.6.1"
   },
