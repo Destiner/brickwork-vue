@@ -2,6 +2,7 @@
   "name": "brickwork-vue",
   "version": "0.2.1",
   "description": "",
+  "type": "module",
   "exports": {
     ".": {
       "import": "./lib/brickwork-vue.es.js"
