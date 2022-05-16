@@ -108,6 +108,7 @@ button > span::after {
 }
 
 .label {
+  all: unset;
   padding-left: 15px;
   color: var(--color-label, #540502);
   font-size: var(--font-size-label, 15px);
