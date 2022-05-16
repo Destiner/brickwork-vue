@@ -54,7 +54,8 @@ label {
   all: unset;
   flex: 1;
   color: var(--color-label, #540502);
-  font-size: 15px;
+  font-size: var(--font-size-label, 15px);
+  font-weight: var(--font-weight-label, 400);
   text-align: right;
   cursor: default;
 }
@@ -72,7 +73,8 @@ input {
   border-radius: 4px;
   box-shadow: var(--color-outline, #c99894) 0 0 0 1px;
   color: var(--color-text, #540502);
-  font-size: 15px;
+  font-size: var(--font-size, 15px);
+  font-weight: var(--font-weight, 400);
   line-height: 1;
 }
 

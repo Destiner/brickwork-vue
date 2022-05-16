@@ -117,7 +117,8 @@ export { Option };
   background-color: var(--color-trigger-bg, white);
   box-shadow: #00000024 0 2px 10px;
   color: var(--color-trigger-label, #540502);
-  font-size: 13px;
+  font-size: var(--font-size-trigger, 13px);
+  font-weight: var(--font-weight-trigger, 400);
   line-height: 1;
   gap: 5px;
 }
@@ -158,7 +159,6 @@ export { Option };
   border-radius: 4px;
   background: var(--color-options-bg, white);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%);
-  font-size: 1rem;
 }
 
 .options:focus {
@@ -171,7 +171,8 @@ export { Option };
   padding: 0 25px;
   border-radius: 4px;
   color: var(--color-option-label, #540502);
-  font-size: 12px;
+  font-size: var(--font-size-option, 12px);
+  font-weight: var(--font-weight-option, 400);
   line-height: 25px;
   text-align: left;
   cursor: default;

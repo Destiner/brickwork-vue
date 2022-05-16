@@ -110,7 +110,8 @@ button > span::after {
 .label {
   padding-left: 15px;
   color: var(--color-label, #540502);
-  font-size: 15px;
+  font-size: var(--font-size-label, 15px);
+  font-weight: var(--font-weight-label, 400);
   line-height: 1;
 }
 </style>

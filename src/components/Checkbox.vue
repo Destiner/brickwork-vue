@@ -91,7 +91,8 @@ button > span {
 label {
   all: unset;
   color: var(--color-label, #540502);
-  font-size: 15px;
+  font-size: var(--font-size-label, 15px);
+  font-weight: var(--font-weight-label, 400);
   text-align: left;
   cursor: default;
 }

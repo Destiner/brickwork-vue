@@ -26,8 +26,8 @@ button {
   background: var(--color-bg, #fafafa);
   box-shadow: #00000024 0 2px 10px;
   color: var(--color-label, #540502);
-  font-size: 15px;
-  font-weight: 500;
+  font-size: var(--font-size-label, 15px);
+  font-weight: var(--font-weight-label, 500);
   line-height: 1;
 }
 
