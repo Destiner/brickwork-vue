@@ -1,3 +1,10 @@
-import { Button, Checkbox, Dialog, Input, RadioGroup } from './components';
+import {
+  Button,
+  Checkbox,
+  Dialog,
+  Input,
+  RadioGroup,
+  Select,
+} from './components';
 
-export { Button, Checkbox, Dialog, Input, RadioGroup };
+export { Button, Checkbox, Dialog, Input, RadioGroup, Select };
