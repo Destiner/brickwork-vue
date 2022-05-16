@@ -20,7 +20,7 @@
     "lint:eslint": "eslint \"src/**/*.{js,ts,vue}\"",
     "lint:stylelint": "stylelint \"src/**/*.{css,vue}\"",
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
-    "prepare": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "",
