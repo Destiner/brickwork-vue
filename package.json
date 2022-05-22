@@ -16,6 +16,7 @@
   "files": [
     "lib/"
   ],
+  "main": "./lib/brickwork-vue.es.js",
   "exports": {
     ".": {
       "import": "./lib/brickwork-vue.es.js"
