@@ -21,7 +21,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: var(--padding, 10px 16px);
-  border-radius: 4px;
+  border-radius: var(--border-radius, 4px);
   background: var(--color-bg, #fafafa);
   box-shadow: #00000024 0 2px 10px;
   color: var(--color-label, #540502);
