@@ -68,8 +68,8 @@ label {
 input {
   all: unset;
   display: inline-flex;
+  box-sizing: border-box;
   flex: var(--flex-input, initial);
-  flex-basis: 0%;
   align-items: center;
   justify-content: center;
   width: 100%;
