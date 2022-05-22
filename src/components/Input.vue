@@ -2,12 +2,12 @@
   <fieldset>
     <label
       v-if="label"
-      for="input"
+      :for="id"
     >
       {{ label }}
     </label>
     <input
-      id="input"
+      :id="id"
       :value="modelValue"
       :placeholder="placeholder"
       @input="handleInput"
@@ -19,6 +19,8 @@
   setup
   lang="ts"
 >
+import { computed } from 'vue';
+
 defineProps({
   modelValue: {
     type: String,
@@ -35,6 +37,8 @@ defineProps({
 });
 
 const emit = defineEmits(['update:modelValue']);
+
+const id = computed(() => `input-${Math.random().toString().substring(2)}`)
 
 function handleInput(e: Event): void {
   const value = (e.target as HTMLInputElement).value;

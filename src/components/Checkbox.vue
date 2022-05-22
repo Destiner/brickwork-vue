@@ -1,7 +1,7 @@
 <template>
   <div>
     <button
-      id="checkbox"
+      :id="id"
       type="button"
       role="checkbox"
       :aria-checked="modelValue"
@@ -30,7 +30,7 @@
     </button>
     <label
       v-if="label"
-      for="checkbox"
+      :for="id"
     >
       {{ label }}
     </label>
@@ -56,6 +56,7 @@ const props = defineProps({
 
 const emit = defineEmits(['update:modelValue']);
 
+const id = computed(() => `checkbox-${Math.random().toString().substring(2)}`)
 const dataState = computed(() => (props.modelValue ? 'checked' : 'unchecked'));
 
 function handleClick(): void {
