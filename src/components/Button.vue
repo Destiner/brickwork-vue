@@ -20,8 +20,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
-  padding: 0 15px;
+  padding: var(--padding, 10px 16px);
   border-radius: 4px;
   background: var(--color-bg, #fafafa);
   box-shadow: #00000024 0 2px 10px;
