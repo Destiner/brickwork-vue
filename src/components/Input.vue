@@ -50,13 +50,14 @@ function handleInput(e: Event): void {
 fieldset {
   all: unset;
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: var(--direction, column);
+  align-items: var(--align, start);
+  gap: var(--gap, 4px);
 }
 
 label {
   all: unset;
-  flex: 1;
+  flex: var(--flex-label, initial);
   color: var(--color-label, #540502);
   font-size: var(--font-size-label, 15px);
   font-weight: var(--font-weight-label, 400);
@@ -67,7 +68,7 @@ label {
 input {
   all: unset;
   display: inline-flex;
-  flex: 2;
+  flex: var(--flex-input, initial);
   flex-basis: 0%;
   align-items: center;
   justify-content: center;
