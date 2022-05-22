@@ -56,7 +56,7 @@ const props = defineProps({
 
 const emit = defineEmits(['update:modelValue']);
 
-const id = computed(() => `checkbox-${Math.random().toString().substring(2)}`)
+const id = computed(() => `checkbox-${Math.random().toString().substring(2)}`);
 const dataState = computed(() => (props.modelValue ? 'checked' : 'unchecked'));
 
 function handleClick(): void {

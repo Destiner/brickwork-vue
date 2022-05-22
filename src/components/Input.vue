@@ -38,7 +38,7 @@ defineProps({
 
 const emit = defineEmits(['update:modelValue']);
 
-const id = computed(() => `input-${Math.random().toString().substring(2)}`)
+const id = computed(() => `input-${Math.random().toString().substring(2)}`);
 
 function handleInput(e: Event): void {
   const value = (e.target as HTMLInputElement).value;
