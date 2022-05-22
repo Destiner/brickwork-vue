@@ -114,5 +114,6 @@ button > span::after {
   font-size: var(--font-size-label, 15px);
   font-weight: var(--font-weight-label, 400);
   line-height: 1;
+  cursor: default;
 }
 </style>
