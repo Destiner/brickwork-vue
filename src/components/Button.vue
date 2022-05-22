@@ -1,18 +1,8 @@
 <template>
-  <button>{{ label }}</button>
+  <button>
+    <slot />
+  </button>
 </template>
-
-<script
-  lang="ts"
-  setup
->
-defineProps({
-  label: {
-    type: String,
-    required: true,
-  },
-});
-</script>
 
 <style scoped>
 button {
