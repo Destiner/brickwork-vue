@@ -74,7 +74,7 @@ input {
   justify-content: center;
   width: 100%;
   padding: var(--padding, 7px 10px);
-  border-radius: 4px;
+  border-radius: var(--border-radius, 4px);
   box-shadow: var(--color-outline, #c99894) 0 0 0 1px;
   color: var(--color-text, #540502);
   font-size: var(--font-size, 15px);
