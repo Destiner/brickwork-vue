@@ -29,6 +29,7 @@ button {
   font-size: var(--font-size-label, 15px);
   font-weight: var(--font-weight-label, 500);
   line-height: 1;
+  text-decoration: none;
 }
 
 button:focus {
