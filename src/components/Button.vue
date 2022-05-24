@@ -25,7 +25,7 @@ button:focus {
 }
 
 button:hover {
-  background-color: var(--color-bg-hover, #eee);
+  background: var(--background-hover, #eee);
   box-shadow: var(--box-shadow-hover, #00000024 0 2px 10px);
 }
 </style>
