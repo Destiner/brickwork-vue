@@ -24,9 +24,6 @@
               class="option"
               :class="{ active }"
             >
-              <span class="option-label">
-                {{ item.label }}
-              </span>
               <span
                 v-if="selected"
                 class="option-selected-icon"
@@ -44,6 +41,9 @@
                     clip-rule="evenodd"
                   />
                 </svg>
+              </span>
+              <span class="option-label">
+                {{ item.label }}
               </span>
             </li>
           </ListboxOption>
@@ -151,7 +151,11 @@ export { Option };
   overflow: auto;
   border-radius: var(--radius-list, 6px);
   background: var(--color-list-bg, white);
-  box-shadow: var(--box-shadow-list, 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -4px rgb(0 0 0 / 10%));
+  box-shadow: var(
+    --box-shadow-list,
+    0 10px 15px -3px rgb(0 0 0 / 10%),
+    0 4px 6px -4px rgb(0 0 0 / 10%)
+  );
 }
 
 .options:focus {
@@ -159,9 +163,10 @@ export { Option };
 }
 
 .option {
-  display: inline-block;
+  display: flex;
   position: relative;
-  padding: var(--padding-item, 0 25px);
+  padding: var(--padding-item, 0 12px);
+  gap: var(--gap-item, 6px);
   border-radius: var(--border-radius-item, 4px);
   color: var(--color-item-label, #540502);
   font-size: var(--font-size-item, 12px);
@@ -185,11 +190,6 @@ export { Option };
 
 .option-selected-icon {
   display: flex;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
   align-items: center;
-  padding-left: var(--gap-item, 6px);
 }
 </style>
