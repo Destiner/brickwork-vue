@@ -60,14 +60,13 @@ function close(): void {
   left: 0;
   align-items: center;
   justify-content: center;
-  padding: 16px;
 }
 
 .panel {
   width: 90vw;
   max-width: 450px;
   max-height: 85vh;
-  padding: 25px;
+  padding: var(--padding, 25px);
   border-radius: var(--border-radius, 6px);
   background: var(--background, white);
 }
