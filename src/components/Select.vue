@@ -113,6 +113,7 @@ export { Option };
   justify-content: center;
   height: var(--height-trigger);
   padding: var(--padding-trigger, 0 15px);
+  border: var(--border-trigger, 1px solid transparent);
   border-radius: var(--border-radius-trigger, 4px);
   background: var(--background-trigger, white);
   box-shadow: var(--box-shadow-trigger, #00000024 0 2px 10px);
@@ -128,7 +129,7 @@ export { Option };
 }
 
 .trigger:focus {
-  border: var(--border-trigger-focus, 2px solid #290402);
+  border: var(--border-trigger-focus, 1px solid #290402);
 }
 
 .show-enter-active,

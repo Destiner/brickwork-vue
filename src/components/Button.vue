@@ -20,10 +20,6 @@ button {
   line-height: 1;
 }
 
-button:focus {
-  border: var(--border-focus, 1px solid#290402);
-}
-
 button:hover {
   background: var(--background-hover, #eee);
   box-shadow: var(--box-shadow-hover, #00000024 0 2px 10px);

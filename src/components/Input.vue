@@ -84,6 +84,6 @@ input {
 }
 
 input:focus {
-  border: var(--border-input-focus, 2px solid #c99894);
+  border: var(--border-input-focus, 1px solid #ae8380);
 }
 </style>
