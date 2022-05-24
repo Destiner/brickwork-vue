@@ -12,16 +12,16 @@ button {
   justify-content: center;
   padding: var(--padding, 10px 16px);
   border-radius: var(--border-radius, 4px);
-  background: var(--color-bg, #fafafa);
+  background: var(--background, #fafafa);
   box-shadow: var(--box-shadow, #00000024 0 2px 10px);
-  color: var(--color-label, #540502);
-  font-size: var(--font-size-label, 15px);
-  font-weight: var(--font-weight-label, 500);
+  color: var(--color, #540502);
+  font-size: var(--font-size, 15px);
+  font-weight: var(--font-weight, 500);
   line-height: 1;
 }
 
 button:focus {
-  box-shadow: var(--color-outline, #290402) 0 0 0 2px;
+  border: var(--border-focus, 1px solid#290402);
 }
 
 button:hover {

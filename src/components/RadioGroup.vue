@@ -86,7 +86,7 @@ button {
   width: var(--size-radio, 25px);
   height: var(--size-radio, 25px);
   border-radius: var(--border-radius-radio, 100%);
-  background-color: var(--color-radio-bg, white);
+  background: var(--background-radio, white);
   box-shadow: var(--box-shadow-radio, #00000024 0 2px 10px);
 }
 
@@ -105,7 +105,7 @@ button > span::after {
   width: var(--size-radio-indicator, 11px);
   height: var(--size-radio-indicator, 11px);
   border-radius: var(--border-radius-radio-indicator, 100%);
-  background-color: var(--color-radio, #540502);
+  background: var(--color-radio-indicator, #540502);
 }
 
 .label {

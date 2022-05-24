@@ -99,7 +99,7 @@ export { Option };
 
 <style scoped>
 .select {
-  --trigger-height: 35px;
+  --height-trigger: 35px;
 
   display: flex;
   position: relative;
@@ -111,12 +111,12 @@ export { Option };
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: var(--trigger-height);
+  height: var(--height-trigger);
   padding: var(--padding-trigger, 0 15px);
   border-radius: var(--border-radius-trigger, 4px);
-  background-color: var(--color-trigger-bg, white);
+  background: var(--background-trigger, white);
   box-shadow: var(--box-shadow-trigger, #00000024 0 2px 10px);
-  color: var(--color-trigger-label, #540502);
+  color: var(--color-trigger, #540502);
   font-size: var(--font-size-trigger, 13px);
   font-weight: var(--font-weight-trigger, 400);
   line-height: 1;
@@ -124,11 +124,11 @@ export { Option };
 }
 
 .trigger:hover {
-  background-color: var(--color-trigger-bg-hover, #eee);
+  background: var(--background-trigger-hover, #eee);
 }
 
 .trigger:focus {
-  box-shadow: var(--color-outline, #290402) 0 0 0 2px;
+  border: var(--border-trigger-focus, 2px solid #290402);
 }
 
 .show-enter-active,
@@ -146,11 +146,11 @@ export { Option };
   position: absolute;
   flex-direction: column;
   max-height: 240px;
-  margin-top: calc(var(--trigger-height) + 4px);
+  margin-top: calc(var(--height-trigger) + 4px);
   padding: var(--padding-list, 4px);
   overflow: auto;
-  border-radius: var(--radius-list, 6px);
-  background: var(--color-list-bg, white);
+  border-radius: var(--border-radius-list, 6px);
+  background: var(--background-list, white);
   box-shadow: var(
     --box-shadow-list,
     0 10px 15px -3px rgb(0 0 0 / 10%),
@@ -168,7 +168,7 @@ export { Option };
   padding: var(--padding-item, 0 12px);
   gap: var(--gap-item, 6px);
   border-radius: var(--border-radius-item, 4px);
-  color: var(--color-item-label, #540502);
+  color: var(--color-item, #540502);
   font-size: var(--font-size-item, 12px);
   font-weight: var(--font-weight-item, 400);
   line-height: 25px;
@@ -178,8 +178,8 @@ export { Option };
 }
 
 .option.active {
-  background: var(--color-item-bg-active, #540502);
-  color: var(--color-item-label-active, white);
+  background: var(--background-item-active, #540502);
+  color: var(--color-item-active, white);
 }
 
 .option-label {

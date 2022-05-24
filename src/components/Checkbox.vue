@@ -79,7 +79,7 @@ button {
   width: var(--size-check, 25px);
   height: var(--size-check, 25px);
   border-radius: var(--border-radius-check, 4px);
-  background-color: var(--color-check-bg, white);
+  background: var(--background-check, white);
   box-shadow: var(--box-shadow-check, #00000024 0 2px 10px);
 }
 

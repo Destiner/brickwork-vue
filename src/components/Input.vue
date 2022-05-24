@@ -50,8 +50,8 @@ function handleInput(e: Event): void {
 fieldset {
   all: unset;
   display: flex;
-  flex-direction: var(--direction, column);
-  align-items: var(--align, start);
+  flex-direction: var(--flex-direction, column);
+  align-items: var(--align-items, start);
   gap: var(--gap, 4px);
 }
 
@@ -73,17 +73,17 @@ input {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: var(--padding, 7px 10px);
-  border-radius: var(--border-radius, 4px);
-  background: var(--color-bg, white);
-  box-shadow: var(--color-outline, #c99894) 0 0 0 1px;
-  color: var(--color-text, #540502);
-  font-size: var(--font-size, 15px);
-  font-weight: var(--font-weight, 400);
+  padding: var(--padding-input, 7px 10px);
+  border: var(--border-input, 1px solid #c99894);
+  border-radius: var(--border-radius-input, 4px);
+  background: var(--background-input, white);
+  color: var(--color-input, #540502);
+  font-size: var(--font-size-input, 15px);
+  font-weight: var(--font-weight-input, 400);
   line-height: 1;
 }
 
 input:focus {
-  box-shadow: var(--color-outline, #c99894) 0 0 0 2px;
+  border: var(--border-input-focus, 2px solid #c99894);
 }
 </style>

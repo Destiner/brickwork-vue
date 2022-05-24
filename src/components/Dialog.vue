@@ -48,7 +48,7 @@ function close(): void {
   right: 0;
   bottom: 0;
   left: 0;
-  background: var(--color-bg-backdrop, #00000070);
+  background: var(--background-backdrop, #00000070);
 }
 
 .body {
@@ -69,6 +69,6 @@ function close(): void {
   max-height: 85vh;
   padding: 25px;
   border-radius: var(--border-radius, 6px);
-  background: var(--color-bg, white);
+  background: var(--background, white);
 }
 </style>
