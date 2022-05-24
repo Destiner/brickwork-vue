@@ -78,15 +78,16 @@ interface Option {
   align-items: center;
   margin-bottom: 8px;
   outline: none;
+  gap: var(--gap, 15px);
 }
 
 button {
   all: unset;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
+  width: var(--size-radio, 25px);
+  height: var(--size-radio, 25px);
+  border-radius: var(--border-radius-radio, 100%);
   background-color: var(--color-radio-bg, white);
-  box-shadow: #00000024 0 2px 10px;
+  box-shadow: var(--box-shadow-radio, #00000024 0 2px 10px);
 }
 
 button > span {
@@ -101,15 +102,14 @@ button > span {
 button > span::after {
   content: '';
   display: block;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
+  width: var(--size-radio-indicator, 11px);
+  height: var(--size-radio-indicator, 11px);
+  border-radius: var(--border-radius-radio-indicator, 100%);
   background-color: var(--color-radio, #540502);
 }
 
 .label {
   all: unset;
-  padding-left: 15px;
   color: var(--color-label, #540502);
   font-size: var(--font-size-label, 15px);
   font-weight: var(--font-weight-label, 400);

@@ -68,7 +68,7 @@ function handleClick(): void {
 div {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: var(--gap, 15px);
 }
 
 button {
@@ -76,11 +76,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25px;
-  height: 25px;
-  border-radius: 4px;
+  width: var(--size-check, 25px);
+  height: var(--size-check, 25px);
+  border-radius: var(--border-radius-check, 4px);
   background-color: var(--color-check-bg, white);
-  box-shadow: #00000024 0 2px 10px;
+  box-shadow: var(--box-shadow-check, #00000024 0 2px 10px);
 }
 
 button > span {
