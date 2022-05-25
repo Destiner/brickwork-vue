@@ -11,6 +11,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: var(--padding, 10px 16px);
+  border: var(--border, none);
   border-radius: var(--border-radius, 4px);
   background: var(--background, #fafafa);
   box-shadow: var(--box-shadow, #00000024 0 2px 10px);
@@ -21,6 +22,7 @@ button {
 }
 
 button:hover {
+  border: var(--border-hover, none);
   background: var(--background-hover, #eee);
   box-shadow: var(--box-shadow-hover, #00000024 0 2px 10px);
 }

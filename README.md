@@ -48,12 +48,14 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   * **default**: button label
 * Styling props
   * **--padding**: button content padding
+  * **--border**: button border
   * **--border-radius**: button border radius
   * **--background**: button background color
   * **--box-shadow**: button box shadow
   * **--color**: button label color
   * **--font-size**: button label font size
   * **--font-weight**: button label font weight
+  * **--border-hover**: button border on hover
   * **--background-hover**: button background color on hover
   * **--box-shadow-hover**: button box shadow on hover
 
