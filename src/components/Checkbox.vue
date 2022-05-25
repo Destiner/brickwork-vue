@@ -78,6 +78,7 @@ button {
   justify-content: center;
   width: var(--size-check, 25px);
   height: var(--size-check, 25px);
+  border: var(--border-check, none);
   border-radius: var(--border-radius-check, 4px);
   background: var(--background-check, white);
   box-shadow: var(--box-shadow-check, #00000024 0 2px 10px);

@@ -66,6 +66,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
 * Styling props
   * **--gap**: gap between checkbox and label
   * **--size-check**: height and width of the checkbox
+  * **--border-check**: checkbox border
   * **--border-radius-check**: checkbox border radius
   * **--background-check**: checkbox background color
   * **--box-shadow-check**: checkbox box shadow
