@@ -31,6 +31,7 @@
     "lint:prettier": "prettier -c \"src/**/*.{json,js,ts,vue}\"",
     "lint:eslint": "eslint \"src/**/*.{js,ts,vue}\"",
     "lint:stylelint": "stylelint \"src/**/*.{css,vue}\"",
+    "typecheck": "tsc --noEmit && npx vue-tsc --noEmit",
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
     "prepack": "npm run build"
   },
