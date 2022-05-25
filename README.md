@@ -2,6 +2,10 @@
 
 Customizable and accessible UI components with sane defaults for Vue 3.
 
+## Demo
+
+See [showcase](https://brickwork-showcase.netlify.app) ([source code](./examples/showcase)).
+
 ## Installation
 
 First, add the package to your project:
