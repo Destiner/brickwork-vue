@@ -151,7 +151,7 @@ export { Option };
   position: absolute;
   flex-direction: column;
   max-height: 240px;
-  margin-top: calc(var(--height-trigger) + 4px);
+  margin-top: calc(var(--height-trigger) + var(--gap, 4px));
   padding: var(--padding-list, 4px);
   overflow: auto;
   border: var(--border-list, none);

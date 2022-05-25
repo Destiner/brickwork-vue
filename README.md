@@ -147,6 +147,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
 * Slots
   * **#trigger** trigger element
 * Styling props
+  * **--gap**: gap between trigger and option list
   * **--padding-trigger**: trigger content padding
   * **--border-trigger**: trigger border
   * **--border-radius-trigger**: trigger border radius
