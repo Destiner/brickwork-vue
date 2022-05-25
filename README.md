@@ -154,6 +154,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   * **--font-size-trigger**: trigger font size
   * **--font-weight-trigger**: trigger font weight
   * **--background-trigger-hover**: trigger background color on hover
+  * **--box-shadow-trigger-hover**: trigger box shadow on hover
   * **--border-trigger-focus**: trigger border on focus
   * **--padding-list**: option list padding
   * **--border-radius-list**: option list border radius

@@ -129,6 +129,7 @@ export { Option };
 
 .trigger:hover {
   background: var(--background-trigger-hover, #eee);
+  box-shadow: var(--box-shadow-trigger-hover, #00000024 0 2px 10px);
 }
 
 .trigger:focus {
