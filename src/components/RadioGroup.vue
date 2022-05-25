@@ -85,6 +85,7 @@ button {
   all: unset;
   width: var(--size-radio, 25px);
   height: var(--size-radio, 25px);
+  border: var(--border-radio, none);
   border-radius: var(--border-radius-radio, 100%);
   background: var(--background-radio, white);
   box-shadow: var(--box-shadow-radio, #00000024 0 2px 10px);

@@ -125,6 +125,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   * **--gap**: gap between items
   * **--gap-item**: gap between radio button and label
   * **--size-radio**: height and width of the radio button
+  * **--border-radio**: radio button border
   * **--border-radius-radio**: radio button border radius
   * **--background-radio**: radio button background color
   * **--box-shadow-radio**: radio button box shadow
