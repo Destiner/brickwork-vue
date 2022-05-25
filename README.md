@@ -159,6 +159,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   * **--box-shadow-trigger-hover**: trigger box shadow on hover
   * **--border-trigger-focus**: trigger border on focus
   * **--padding-list**: option list padding
+  * **--border-list**: option list border
   * **--border-radius-list**: option list border radius
   * **--background-list**: option list background color
   * **--box-shadow-list**: option list box shadow

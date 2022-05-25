@@ -154,6 +154,7 @@ export { Option };
   margin-top: calc(var(--height-trigger) + 4px);
   padding: var(--padding-list, 4px);
   overflow: auto;
+  border: var(--border-list, none);
   border-radius: var(--border-radius-list, 6px);
   background: var(--background-list, white);
   box-shadow: var(
