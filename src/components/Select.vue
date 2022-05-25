@@ -1,23 +1,23 @@
 <template>
   <Listbox
-    :model-value="selectedItem"
+    :model-value="selectedOption"
     @update:model-value="handleUpdate"
   >
     <div class="select">
       <ListboxButton class="trigger">
         <slot
           name="trigger"
-          :selected-item="selectedItem"
+          :selected-item="selectedOption"
         />
       </ListboxButton>
 
       <transition name="show">
         <ListboxOptions class="options">
           <ListboxOption
-            v-for="item in items"
+            v-for="option in options"
             v-slot="{ active, selected }"
-            :key="item.value"
-            :value="item"
+            :key="option.value"
+            :value="option"
             as="template"
           >
             <li
@@ -43,7 +43,7 @@
                 </svg>
               </span>
               <span class="option-label">
-                {{ item.label }}
+                {{ option.label }}
               </span>
             </li>
           </ListboxOption>
@@ -70,7 +70,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  items: {
+  options: {
     type: Array as PropType<Option[]>,
     required: true,
   },
@@ -78,8 +78,8 @@ const props = defineProps({
 
 const emit = defineEmits(['update:modelValue']);
 
-const selectedItem = computed(() =>
-  props.items.find((item) => item.value === props.modelValue),
+const selectedOption = computed(() =>
+  props.options.find((option) => option.value === props.modelValue),
 );
 
 function handleUpdate(option: Option): void {
