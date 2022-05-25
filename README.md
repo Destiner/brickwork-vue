@@ -113,6 +113,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   * **--font-size-input**: input font size
   * **--font-weight-input**: input font weight
   * **--border-input-focus**: input border on focus
+  * **--background-input-focus**: input background on focus
 
 ### RadioGroup
 

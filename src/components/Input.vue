@@ -85,5 +85,6 @@ input {
 
 input:focus {
   border: var(--border-input-focus, 1px solid #ae8380);
+  background: var(--background-input-focus, white);
 }
 </style>
