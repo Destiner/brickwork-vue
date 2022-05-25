@@ -42,7 +42,10 @@
                   />
                 </svg>
               </span>
-              <span class="option-label">
+              <span
+                class="option-label"
+                :class="{ selected }"
+              >
                 {{ option.label }}
               </span>
             </li>
@@ -169,7 +172,6 @@ export { Option };
   align-items: center;
   padding: var(--padding-item, 0 12px);
   gap: var(--gap-item, 6px);
-  padding-left: calc(var(--gap-item, 6px) + var(--size-item-active-icon, 14px));
   border-radius: var(--border-radius-item, 4px);
   color: var(--color-item, #540502);
   font-size: var(--font-size-item, 12px);
@@ -181,15 +183,19 @@ export { Option };
 }
 
 .option.active {
-  padding-left: 0;
   background: var(--background-item-active, #540502);
   color: var(--color-item-active, white);
 }
 
 .option-label {
+  padding-left: calc(var(--gap-item, 6px) + var(--size-item-active-icon, 14px));
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.option-label.selected {
+  padding-left: 0;
 }
 
 .option-selected-icon {
