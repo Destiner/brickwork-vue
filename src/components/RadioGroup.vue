@@ -76,9 +76,9 @@ interface Option {
 .option {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: var(--gap, 8px);
   outline: none;
-  gap: var(--gap, 15px);
+  gap: var(--gap-item, 15px);
 }
 
 button {
