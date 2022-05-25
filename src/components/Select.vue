@@ -29,8 +29,8 @@
                 class="option-selected-icon"
               >
                 <svg
-                  width="14"
-                  height="14"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 15 15"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -166,8 +166,10 @@ export { Option };
 .option {
   display: flex;
   position: relative;
+  align-items: center;
   padding: var(--padding-item, 0 12px);
   gap: var(--gap-item, 6px);
+  padding-left: calc(var(--gap-item, 6px) + var(--size-item-active-icon, 14px));
   border-radius: var(--border-radius-item, 4px);
   color: var(--color-item, #540502);
   font-size: var(--font-size-item, 12px);
@@ -179,6 +181,7 @@ export { Option };
 }
 
 .option.active {
+  padding-left: 0;
   background: var(--background-item-active, #540502);
   color: var(--color-item-active, white);
 }
@@ -191,6 +194,7 @@ export { Option };
 
 .option-selected-icon {
   display: flex;
-  align-items: center;
+  width: var(--size-item-active-icon, 14px);
+  height: var(--size-item-active-icon, 14px);
 }
 </style>

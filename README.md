@@ -164,3 +164,4 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   * **--font-weight-item**: item font weight
   * **--background-item-active**: active item background color
   * **--color-item-active**: active item color
+  * **--size-item-active-icon**: active item icon size
