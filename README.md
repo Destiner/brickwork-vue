@@ -93,8 +93,8 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
 * Model
   * **v-model**: input state
 * Props
-  * **:label**: input label
-  * **:placeholder**: input placeholder
+  * **:label**: [optional] input label
+  * **:placeholder**: [optional] input placeholder
 * Styling props
   * **--flex-direction**: flex direction of label and input
   * **--align-items**: align label and input
