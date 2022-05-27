@@ -182,6 +182,7 @@ label {
 .options {
   display: flex;
   position: absolute;
+  z-index: 1;
   flex-direction: column;
   max-height: 240px;
   margin-top: var(--gap, 4px);
