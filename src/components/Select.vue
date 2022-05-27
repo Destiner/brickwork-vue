@@ -4,12 +4,23 @@
     @update:model-value="handleUpdate"
   >
     <div class="select">
-      <ListboxButton class="trigger">
-        <slot
-          name="trigger"
-          :selected-item="selectedOption"
-        />
-      </ListboxButton>
+      <div class="trigger">
+        <label
+          v-if="label"
+          :for="id"
+        >
+          {{ label }}
+        </label>
+        <ListboxButton
+          :id="id"
+          class="trigger-button"
+        >
+          <slot
+            name="trigger"
+            :selected-item="selectedOption"
+          />
+        </ListboxButton>
+      </div>
 
       <transition name="show">
         <ListboxOptions class="options">
@@ -77,9 +88,15 @@ const props = defineProps({
     type: Array as PropType<Option[]>,
     required: true,
   },
+  label: {
+    type: String,
+    default: '',
+  },
 });
 
 const emit = defineEmits(['update:modelValue']);
+
+const id = computed(() => `select-${Math.random().toString().substring(2)}`);
 
 const selectedOption = computed(() =>
   props.options.find((option) => option.value === props.modelValue),
@@ -102,38 +119,54 @@ export { Option };
 
 <style scoped>
 .select {
-  --height-trigger: 35px;
-
-  display: flex;
+  all: unset;
   position: relative;
-  margin-top: 4px;
 }
 
 .trigger {
   all: unset;
+  display: flex;
+  position: relative;
+  flex-direction: var(--flex-direction-trigger, column);
+  align-items: var(--align-items-trigger, start);
+  gap: var(--gap-trigger, 4px);
+}
+
+label {
+  all: unset;
+  flex: var(--flex-label, initial);
+  color: var(--color-label, #540502);
+  font-size: var(--font-size-label, 12px);
+  font-weight: var(--font-weight-label, 400);
+  text-align: right;
+  cursor: default;
+}
+
+.trigger-button {
+  all: unset;
   display: inline-flex;
+  flex: var(--flex-button, initial);
   align-items: center;
   justify-content: center;
-  height: var(--height-trigger);
-  padding: var(--padding-trigger, 0 15px);
-  border: var(--border-trigger, 1px solid transparent);
-  border-radius: var(--border-radius-trigger, 4px);
-  background: var(--background-trigger, white);
-  box-shadow: var(--box-shadow-trigger, #00000024 0 2px 10px);
-  color: var(--color-trigger, #540502);
-  font-size: var(--font-size-trigger, 13px);
-  font-weight: var(--font-weight-trigger, 400);
+  padding: var(--padding-button, 10px 15px);
+  border: var(--border-button, 1px solid transparent);
+  border-radius: var(--border-radius-button, 4px);
+  background: var(--background-button, white);
+  box-shadow: var(--box-shadow-button, #00000024 0 2px 10px);
+  color: var(--color-button, #540502);
+  font-size: var(--font-size-button, 13px);
+  font-weight: var(--font-weight-button, 400);
   line-height: 1;
   gap: 5px;
 }
 
-.trigger:hover {
-  background: var(--background-trigger-hover, #eee);
-  box-shadow: var(--box-shadow-trigger-hover, #00000024 0 2px 10px);
+.trigger-button:hover {
+  background: var(--background-button-hover, #eee);
+  box-shadow: var(--box-shadow-button-hover, #00000024 0 2px 10px);
 }
 
-.trigger:focus {
-  border: var(--border-trigger-focus, 1px solid #290402);
+.trigger-button:focus {
+  border: var(--border-button-focus, 1px solid #290402);
 }
 
 .show-enter-active,
@@ -151,7 +184,7 @@ export { Option };
   position: absolute;
   flex-direction: column;
   max-height: 240px;
-  margin-top: calc(var(--height-trigger) + var(--gap, 4px));
+  margin-top: var(--gap, 4px);
   padding: var(--padding-list, 4px);
   overflow: auto;
   border: var(--border-list, none);

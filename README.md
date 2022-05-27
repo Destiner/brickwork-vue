@@ -152,17 +152,25 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   * **#trigger** trigger element
 * Styling props
   * **--gap**: gap between trigger and option list
-  * **--padding-trigger**: trigger content padding
-  * **--border-trigger**: trigger border
-  * **--border-radius-trigger**: trigger border radius
-  * **--background-trigger**: trigger background color
-  * **--box-shadow-trigger**: trigger box shadow
-  * **--color-trigger**: trigger color
-  * **--font-size-trigger**: trigger font size
-  * **--font-weight-trigger**: trigger font weight
-  * **--background-trigger-hover**: trigger background color on hover
-  * **--box-shadow-trigger-hover**: trigger box shadow on hover
-  * **--border-trigger-focus**: trigger border on focus
+  * **--gap-trigger**: gap between label and trigger button
+  * **--flex-direction-trigger**: flex direction of label and trigger button
+  * **--align-items-trigger**: align label and trigger button
+  * **--flex-label**: label flex
+  * **--color-label**: label color
+  * **--font-size-label**: label font size
+  * **--font-weight-label**: label font weight
+  * **--flex-button**: trigger button flex
+  * **--padding-button**: trigger button content padding
+  * **--border-button**: trigger button border
+  * **--border-radius-button**: trigger button border radius
+  * **--background-button**: trigger button background color
+  * **--box-shadow-button**: trigger button box shadow
+  * **--color-button**: trigger button color
+  * **--font-size-button**: trigger button font size
+  * **--font-weight-button**: trigger button font weight
+  * **--background-button-hover**: trigger button background color on hover
+  * **--box-shadow-button-hover**: trigger button box shadow on hover
+  * **--border-button-focus**: trigger button border on focus
   * **--padding-list**: option list padding
   * **--border-list**: option list border
   * **--border-radius-list**: option list border radius
