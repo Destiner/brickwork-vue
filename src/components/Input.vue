@@ -59,7 +59,7 @@ label {
   all: unset;
   flex: var(--flex-label, initial);
   color: var(--color-label, #540502);
-  font-size: var(--font-size-label, 15px);
+  font-size: var(--font-size-label, 12px);
   font-weight: var(--font-weight-label, 400);
   text-align: right;
   cursor: default;
