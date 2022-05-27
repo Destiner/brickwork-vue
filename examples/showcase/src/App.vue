@@ -408,15 +408,15 @@ h2 {
 
 .select-b {
   --gap: 8px;
-  --border-trigger: 2px solid transparent;
-  --border-radius-trigger: 8px;
-  --background-trigger: tomato;
-  --box-shadow-trigger: none;
-  --color-trigger: white;
-  --font-weight-trigger: 500;
-  --background-trigger-hover: tomato;
-  --box-shadow-trigger-hover: #e65940c0 0 2px 10px;
-  --border-trigger-focus: 2px solid black;
+  --border-button: 2px solid transparent;
+  --border-radius-button: 8px;
+  --background-button: tomato;
+  --box-shadow-button: none;
+  --color-button: white;
+  --font-weight-button: 500;
+  --background-button-hover: tomato;
+  --box-shadow-button-hover: #e65940c0 0 2px 10px;
+  --border-button-focus: 2px solid black;
   --padding-list: 8px;
   --border-list: 4px solid tomato;
   --border-radius-list: 16px;
@@ -429,34 +429,34 @@ h2 {
   --font-weight-item: 400;
   --background-item-active: tomato;
   --color-item-active: white;
-  --size-item-active-icon: 12px;
+  --size-item-active-icon: 20px;
 }
 
 .select-c {
   --gap: 4px;
-  --border-trigger: 1px solid black;
-  --border-radius-trigger: 0;
-  --background-trigger: black;
-  --box-shadow-trigger: none;
-  --color-trigger: white;
-  --font-weight-trigger: 400;
-  --background-trigger-hover: #222;
-  --box-shadow-trigger-hover: none;
-  --border-trigger-focus: 1px solid #222;
+  --border-button: 1px solid black;
+  --border-radius-button: 0;
+  --background-button: black;
+  --box-shadow-button: none;
+  --color-button: white;
+  --font-weight-button: 400;
+  --background-button-hover: #222;
+  --box-shadow-button-hover: none;
+  --border-button-focus: 1px solid #222;
   --padding-list: 4px;
   --border-list: 1px solid black;
   --border-radius-list: 0;
   --background-list: white;
   --box-shadow-list: none;
   --padding-item: 2px 4px;
-  --gap-item: 4px;
+  --gap-item: 2px;
   --border-radius-item: 0;
   --color-item: black;
   --font-size-item: 12px;
   --font-weight-item: 400;
   --background-item-active: black;
   --color-item-active: white;
-  --size-item-active-icon: 8px;
+  --size-item-active-icon: 10px;
 }
 
 .dialog-b {
