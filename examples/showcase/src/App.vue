@@ -88,10 +88,11 @@
     </div>
     <div class="component">
       <h2>Select</h2>
-      <div class="items">
+      <div class="items items-vertical">
         <div class="item select-a">
           <Select
             v-model="selectOption"
+            :label="'Planets'"
             :options="selectOptions"
           >
             <template #trigger="{ selectedItem }">
@@ -112,6 +113,7 @@
         <div class="item select-c">
           <Select
             v-model="selectOption"
+            :label="'Planets'"
             :options="selectOptions"
           >
             <template #trigger="{ selectedItem }">
@@ -434,6 +436,7 @@ h2 {
 
 .select-c {
   --gap: 4px;
+  --color-label: black;
   --border-button: 1px solid black;
   --border-radius-button: 0;
   --background-button: black;
