@@ -26,4 +26,9 @@ button:hover {
   background: var(--background-hover, #eee);
   box-shadow: var(--box-shadow-hover, #00000024 0 2px 10px);
 }
+
+button:disabled {
+  background: var(--background-disabled, #ccc);
+  color: var(--color-disabled, #3b0301);
+}
 </style>
