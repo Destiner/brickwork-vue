@@ -185,3 +185,39 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--background-item-active**: active item background color
   - **--color-item-active**: active item color
   - **--size-item-active-icon**: active item icon size
+
+### Dropdown
+
+- Props
+  - **:options**: list of available options
+- Emits
+  - **@select**: fires on option select
+- Slots
+  - **#trigger** trigger element
+- Styling props
+  - **--gap**: gap between trigger and option list
+  - **--flex-button**: trigger button flex
+  - **--padding-button**: trigger button content padding
+  - **--border-button**: trigger button border
+  - **--border-radius-button**: trigger button border radius
+  - **--background-button**: trigger button background color
+  - **--box-shadow-button**: trigger button box shadow
+  - **--color-button**: trigger button color
+  - **--font-size-button**: trigger button font size
+  - **--font-weight-button**: trigger button font weight
+  - **--background-button-hover**: trigger button background color on hover
+  - **--box-shadow-button-hover**: trigger button box shadow on hover
+  - **--border-button-focus**: trigger button border on focus
+  - **--padding-list**: option list padding
+  - **--border-list**: option list border
+  - **--border-radius-list**: option list border radius
+  - **--background-list**: option list background color
+  - **--box-shadow-list**: option list box shadow
+  - **--padding-item**: item padding
+  - **--gap-item**: item gap
+  - **--border-radius-item**: item border radius
+  - **--color-item**: item color
+  - **--font-size-item**: item font size
+  - **--font-weight-item**: item font weight
+  - **--background-item-active**: active item background color
+  - **--color-item-active**: active item color
