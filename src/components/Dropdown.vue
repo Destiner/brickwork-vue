@@ -1,34 +1,32 @@
 <template>
-  <div class="container">
-    <Menu
-      as="div"
-      class="menu"
-    >
-      <div>
-        <MenuButton class="trigger-button">
-          <slot name="trigger" />
-        </MenuButton>
-      </div>
+  <Menu
+    as="div"
+    class="menu"
+  >
+    <div>
+      <MenuButton class="trigger-button">
+        <slot name="trigger" />
+      </MenuButton>
+    </div>
 
-      <transition name="show">
-        <MenuItems class="items">
-          <MenuItem
-            v-for="option in options"
-            :key="option.value"
-            v-slot="{ active }"
+    <transition name="show">
+      <MenuItems class="items">
+        <MenuItem
+          v-for="option in options"
+          :key="option.value"
+          v-slot="{ active }"
+        >
+          <button
+            class="item"
+            :class="{ active }"
+            @click="handleClick(option.value)"
           >
-            <button
-              class="item"
-              :class="{ active }"
-              @click="handleClick(option.value)"
-            >
-              {{ option.label }}
-            </button>
-          </MenuItem>
-        </MenuItems>
-      </transition>
-    </Menu>
-  </div>
+            {{ option.label }}
+          </button>
+        </MenuItem>
+      </MenuItems>
+    </transition>
+  </Menu>
 </template>
 
 <script
@@ -63,11 +61,6 @@ export { Option };
 </script>
 
 <style scoped>
-.container {
-  position: fixed;
-  text-align: right;
-}
-
 .menu {
   display: inline-block;
   position: relative;
