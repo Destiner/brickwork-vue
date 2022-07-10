@@ -354,6 +354,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dialog-b {
+  --background-backdrop: #e6594060;
+  --padding: 32px;
+  --border-radius: 24px;
+  --background: #fff6f5;
+}
+
+.dialog-c {
+  --padding: 8px;
+  --border-radius: 0;
+  --background: white;
+}
+</style>
+
+<style scoped>
 h1,
 h2 {
   margin: 8px 0;
@@ -514,19 +529,6 @@ h2 {
   --background-item-active: black;
   --color-item-active: white;
   --size-item-active-icon: 10px;
-}
-
-.dialog-b {
-  --background-backdrop: #e6594060;
-  --padding: 32px;
-  --border-radius: 24px;
-  --background: #fff6f5;
-}
-
-.dialog-c {
-  --padding: 8px;
-  --border-radius: 0;
-  --background: white;
 }
 
 .dropdown-b {
