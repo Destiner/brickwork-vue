@@ -62,7 +62,7 @@ interface Option {
 export { Option };
 </script>
 
-<style>
+<style scoped>
 .container {
   position: fixed;
   text-align: right;
