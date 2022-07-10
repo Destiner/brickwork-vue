@@ -28,10 +28,7 @@
   </RadioGroup>
 </template>
 
-<script
-  setup
-  lang="ts"
->
+<script setup lang="ts">
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue';
 import { PropType } from 'vue';
 

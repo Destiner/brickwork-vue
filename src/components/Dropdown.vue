@@ -29,10 +29,7 @@
   </Menu>
 </template>
 
-<script
-  setup
-  lang="ts"
->
+<script setup lang="ts">
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
 import { PropType } from 'vue';
 
