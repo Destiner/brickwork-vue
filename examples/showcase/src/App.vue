@@ -200,6 +200,32 @@
         </div>
       </div>
     </div>
+    <div class="component">
+      <h2>Dropdown</h2>
+      <div class="items items-vertical">
+        <div class="item dropdown-a">
+          <Dropdown :options="dropdownOptions">
+            <template #trigger>
+              <span>Elements</span>
+            </template>
+          </Dropdown>
+        </div>
+        <div class="item dropdown-b">
+          <Dropdown :options="dropdownOptions">
+            <template #trigger>
+              <span>Elements</span>
+            </template>
+          </Dropdown>
+        </div>
+        <div class="item dropdown-c">
+          <Dropdown :options="dropdownOptions">
+            <template #trigger>
+              <span>Elements</span>
+            </template>
+          </Dropdown>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -211,6 +237,7 @@ import {
   Button,
   Checkbox,
   Dialog,
+  Dropdown,
   Input,
   RadioGroup,
   Select,
@@ -255,6 +282,33 @@ const selectOptions = [
   {
     label: 'Neptune',
     value: 'neptune',
+  },
+];
+
+const dropdownOptions = [
+  {
+    label: 'Hydrogen',
+    value: 'h',
+  },
+  {
+    label: 'Helium',
+    value: 'he',
+  },
+  {
+    label: 'Lithium',
+    value: 'li',
+  },
+  {
+    label: 'Beryllium',
+    value: 'be',
+  },
+  {
+    label: 'Boron',
+    value: 'b',
+  },
+  {
+    label: 'Carbon',
+    value: 'c',
   },
 ];
 
@@ -473,5 +527,59 @@ h2 {
   --padding: 8px;
   --border-radius: 0;
   --background: white;
+}
+
+.dropdown-b {
+  --gap: 8px;
+  --border-button: 2px solid transparent;
+  --border-radius-button: 8px;
+  --background-button: tomato;
+  --box-shadow-button: none;
+  --color-button: white;
+  --font-weight-button: 500;
+  --background-button-hover: tomato;
+  --box-shadow-button-hover: #e65940c0 0 2px 10px;
+  --border-button-focus: 2px solid black;
+  --padding-list: 8px;
+  --border-list: 4px solid tomato;
+  --border-radius-list: 16px;
+  --background-list: white;
+  --padding-item: 2px 8px;
+  --gap-item: 8px;
+  --border-radius-item: 4px;
+  --color-item: tomato;
+  --font-size-item: 12px;
+  --font-weight-item: 400;
+  --background-item-active: tomato;
+  --color-item-active: white;
+  --size-item-active-icon: 20px;
+}
+
+.dropdown-c {
+  --gap: 4px;
+  --color-label: black;
+  --border-button: 1px solid black;
+  --border-radius-button: 0;
+  --background-button: black;
+  --box-shadow-button: none;
+  --color-button: white;
+  --font-weight-button: 400;
+  --background-button-hover: #222;
+  --box-shadow-button-hover: none;
+  --border-button-focus: 1px solid #222;
+  --padding-list: 4px;
+  --border-list: 1px solid black;
+  --border-radius-list: 0;
+  --background-list: white;
+  --box-shadow-list: none;
+  --padding-item: 2px 4px;
+  --gap-item: 2px;
+  --border-radius-item: 0;
+  --color-item: black;
+  --font-size-item: 12px;
+  --font-weight-item: 400;
+  --background-item-active: black;
+  --color-item-active: white;
+  --size-item-active-icon: 10px;
 }
 </style>
