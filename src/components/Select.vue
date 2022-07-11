@@ -211,6 +211,7 @@ label {
   font-weight: var(--font-weight-item, 400);
   line-height: 25px;
   text-align: left;
+  white-space: nowrap;
   cursor: default;
   user-select: none;
 }
