@@ -77,7 +77,7 @@ input {
   color: var(--color-input, #540502);
   font-size: var(--font-size-input, 15px);
   font-weight: var(--font-weight-input, 400);
-  line-height: 1;
+  line-height: var(--line-height-input, 1);
 }
 
 input:focus {

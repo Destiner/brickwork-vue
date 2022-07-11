@@ -153,7 +153,7 @@ label {
   color: var(--color-button, #540502);
   font-size: var(--font-size-button, 13px);
   font-weight: var(--font-weight-button, 400);
-  line-height: 1;
+  line-height: var(--line-height-button, 1);
   gap: 5px;
 }
 
@@ -209,7 +209,7 @@ label {
   color: var(--color-item, #540502);
   font-size: var(--font-size-item, 12px);
   font-weight: var(--font-weight-item, 400);
-  line-height: 1;
+  line-height: var(--line-height-item, 1);
   text-align: left;
   white-space: nowrap;
   cursor: default;

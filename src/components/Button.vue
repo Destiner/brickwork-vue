@@ -18,7 +18,7 @@ button {
   color: var(--color, #540502);
   font-size: var(--font-size, 15px);
   font-weight: var(--font-weight, 500);
-  line-height: 1;
+  line-height: var(--line-height, 1);
 }
 
 button:hover {

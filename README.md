@@ -57,6 +57,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--color**: button label color
   - **--font-size**: button label font size
   - **--font-weight**: button label font weight
+  - **--line-height**: button label line height
   - **--border-hover**: button border on hover
   - **--background-hover**: button background color on hover
   - **--box-shadow-hover**: button box shadow on hover
@@ -118,6 +119,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--color-input**: input color
   - **--font-size-input**: input font size
   - **--font-weight-input**: input font weight
+  - **--line-height-input**: input line height
   - **--border-input-focus**: input border on focus
   - **--background-input-focus**: input background on focus
 
@@ -141,6 +143,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--color-label**: label color
   - **--font-size-label**: label font size
   - **--font-weight-label**: label font weight
+  - **--line-height-label**: label line height
 
 ### Select
 
@@ -168,6 +171,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--color-button**: trigger button color
   - **--font-size-button**: trigger button font size
   - **--font-weight-button**: trigger button font weight
+  - **--line-height-button**: trigger button line height
   - **--background-button-hover**: trigger button background color on hover
   - **--box-shadow-button-hover**: trigger button box shadow on hover
   - **--border-button-focus**: trigger button border on focus
@@ -182,6 +186,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--color-item**: item color
   - **--font-size-item**: item font size
   - **--font-weight-item**: item font weight
+  - **--line-height-item**: item line height
   - **--background-item-active**: active item background color
   - **--color-item-active**: active item color
   - **--size-item-active-icon**: active item icon size
@@ -205,6 +210,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--color-button**: trigger button color
   - **--font-size-button**: trigger button font size
   - **--font-weight-button**: trigger button font weight
+  - **--line-height-button**: trigger button line height
   - **--background-button-hover**: trigger button background color on hover
   - **--box-shadow-button-hover**: trigger button box shadow on hover
   - **--border-button-focus**: trigger button border on focus
@@ -219,5 +225,6 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--color-item**: item color
   - **--font-size-item**: item font size
   - **--font-weight-item**: item font weight
+  - **--line-height-item**: item line height
   - **--background-item-active**: active item background color
   - **--color-item-active**: active item color
