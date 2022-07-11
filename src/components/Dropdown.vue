@@ -136,7 +136,7 @@ export { Option };
   color: var(--color-item, #540502);
   font-size: var(--font-size-item, 12px);
   font-weight: var(--font-weight-item, 400);
-  line-height: 25px;
+  line-height: 1;
   text-align: left;
   white-space: nowrap;
   cursor: default;
