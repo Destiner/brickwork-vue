@@ -78,7 +78,7 @@ export { Option };
   color: var(--color-button, #540502);
   font-size: var(--font-size-button, 13px);
   font-weight: var(--font-weight-button, 400);
-  line-height: var(--line-height-button, 1)
+  line-height: var(--line-height-button, 1);
   gap: 5px;
 }
 
