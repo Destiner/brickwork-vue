@@ -8,6 +8,7 @@
     </label>
     <input
       :id="id"
+      ref="input"
       :value="modelValue"
       :placeholder="placeholder"
       @input="handleInput"
@@ -16,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 
 defineProps({
   modelValue: {
@@ -33,7 +34,13 @@ defineProps({
   },
 });
 
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits(['init', 'update:modelValue']);
+
+onMounted(() => {
+  emit('init', input.value);
+});
+
+const input = ref<HTMLInputElement | null>(null);
 
 const id = computed(() => `input-${Math.random().toString().substring(2)}`);
 
