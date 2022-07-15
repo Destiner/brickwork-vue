@@ -103,6 +103,8 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
 - Props
   - **:label**: [optional] input label
   - **:placeholder**: [optional] input placeholder
+- Emits
+  - **@init**: fires on input init, provides reference to input element
 - Styling props
   - **--flex-direction**: flex direction of label and input
   - **--align-items**: align label and input
