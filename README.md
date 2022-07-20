@@ -61,6 +61,7 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--border-hover**: button border on hover
   - **--background-hover**: button background color on hover
   - **--box-shadow-hover**: button box shadow on hover
+  - **--color-hover**: button label color on hover
   - **--background-disabled**: button background on disabled
   - **--color-disabled**: button label color on disabled
 
