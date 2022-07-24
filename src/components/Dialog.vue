@@ -90,9 +90,8 @@ function close(): void {
 }
 
 .panel {
-  width: 90vw;
-  max-width: 450px;
-  max-height: 85vh;
+  width: var(--width, 450px);
+  max-height: var(--max-height, 85vh);
   padding: var(--padding, 25px);
   border-radius: var(--border-radius, 6px);
   background: var(--background, white);

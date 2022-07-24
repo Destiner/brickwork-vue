@@ -93,6 +93,8 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **default**: dialog content
 - Styling props
   - **--background-backdrop**: backdrop background color
+  - **--width**: modal width
+  - **--max-height**: modal max height
   - **--padding**: modal content padding
   - **--border-radius**: modal panel border radius
   - **--background**: modal panel background
