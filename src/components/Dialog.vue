@@ -85,7 +85,7 @@ function close(): void {
 }
 
 .backdrop-enter {
-  transition: all 300ms ease-out;
+  transition: all 200ms ease-out;
 }
 
 .backdrop-enter-from {
@@ -97,7 +97,7 @@ function close(): void {
 }
 
 .backdrop-leave {
-  transition: all 200ms ease-in;
+  transition: all 150ms ease-in;
 }
 
 .backdrop-leave-from {
@@ -109,7 +109,7 @@ function close(): void {
 }
 
 .panel-enter {
-  transition: all 300ms ease-out;
+  transition: all 200ms ease-out;
 }
 
 .panel-enter-from {
@@ -123,7 +123,7 @@ function close(): void {
 }
 
 .panel-leave {
-  transition: all 200ms ease-in;
+  transition: all 150ms ease-in;
 }
 
 .panel-leave-form {
