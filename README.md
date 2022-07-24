@@ -91,29 +91,6 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **@close**: fires on model close
 - Slots
   - **default**: dialog content
-- Styling props
-  - **--background-backdrop**: backdrop background color
-  - **--width**: modal width
-  - **--max-height**: modal max height
-  - **--padding**: modal content padding
-  - **--border-radius**: modal panel border radius
-  - **--background**: modal panel background
-  - **--transition-backdrop-enter**: backdrop enter transition
-  - **--opacity-backdrop-enter-from**: backdrop opacity enter animation (initial value)
-  - **--opacity-backdrop-enter-to**: backdrop opacity enter animation (final value)
-  - **--transition-backdrop-leave**: backdrop transition
-  - **--opacity-backdrop-leave-from**: backdrop opacity leave animation (initial value)
-  - **--opacity-backdrop-leave-to**: backdrop opacity leave animation (final value)
-  - **--transition-panel-enter**: modal panel enter transition
-  - **--transform-panel-enter-from**: modal panel transform enter animation (initial value)
-  - **--opacity-panel-enter-from**: modal panel opacity enter animation (initial value)
-  - **--transform-panel-enter-to**: modal panel transform enter animation (final value)
-  - **--opacity-panel-enter-to**: modal panel opacity enter animation (final value)
-  - **--transition-panel-leave**: modal panel leave transition
-  - **--transform-panel-leave-from**: modal panel transform leave animation (initial value)
-  - **--opacity-panel-leave-from**: modal panel opacity leave animation (initial value)
-  - **--transform-panel-leave-to**: modal panel transform leave animation (final value)
-  - **--opacity-panel-leave-to**: modal panel opacity leave animation (final value)
 
 ### Input
 
