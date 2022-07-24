@@ -32,7 +32,7 @@
           leave-from="panel-leave-form"
           leave-to="panel-leave-to"
         >
-          <DialogPanel class="panel">
+          <DialogPanel>
             <slot />
           </DialogPanel>
         </TransitionChild>
@@ -70,7 +70,7 @@ function close(): void {
   right: 0;
   bottom: 0;
   left: 0;
-  background: var(--background-backdrop, #00000070);
+  background: #00000070;
 }
 
 .body {
@@ -84,63 +84,55 @@ function close(): void {
   justify-content: center;
 }
 
-.panel {
-  width: var(--width, 450px);
-  max-height: var(--max-height, 85vh);
-  padding: var(--padding, 25px);
-  border-radius: var(--border-radius, 6px);
-  background: var(--background, white);
-}
-
 .backdrop-enter {
-  transition: var(--transition-backdrop-enter, all 300ms ease-out);
+  transition: all 300ms ease-out;
 }
 
 .backdrop-enter-from {
-  opacity: var(--opacity-backdrop-enter-from, 0);
+  opacity: 0;
 }
 
 .backdrop-enter-to {
-  opacity: var(--opacity-backdrop-enter-to, 1);
+  opacity: 1;
 }
 
 .backdrop-leave {
-  transition: var(--transition-backdrop-leave, all 200ms ease-in);
+  transition: all 200ms ease-in;
 }
 
 .backdrop-leave-from {
-  opacity: var(--opacity-backdrop-leave-from, 1);
+  opacity: 1;
 }
 
 .backdrop-leave-to {
-  opacity: var(--opacity-backdrop-leave-to, 0);
+  opacity: 0;
 }
 
 .panel-enter {
-  transition: var(--transition-panel-enter, all 300ms ease-out);
+  transition: all 300ms ease-out;
 }
 
 .panel-enter-from {
-  transform: var(--transform-panel-enter-from, scale(0.95));
-  opacity: var(--opacity-panel-enter-from, 0);
+  transform: scale(0.95);
+  opacity: 0;
 }
 
 .panel-enter-to {
-  transform: var(--transform-panel-enter-to, scale(1));
-  opacity: var(--opacity-panel-enter-to, 1);
+  transform: scale(1);
+  opacity: 1;
 }
 
 .panel-leave {
-  transition: var(--transition-panel-leave, all 200ms ease-in);
+  transition: all 200ms ease-in;
 }
 
 .panel-leave-form {
-  transform: var(--transform-panel-leave-from, scale(1));
-  opacity: var(--opacity-panel-leave-from, 1);
+  transform: scale(1);
+  opacity: 1;
 }
 
 .panel-leave-to {
-  transform: var(--transform-panel-leave-to, scale(0.95));
-  opacity: var(--opacity-panel-leave-to, 0);
+  transform: scale(0.95);
+  opacity: 0;
 }
 </style>
