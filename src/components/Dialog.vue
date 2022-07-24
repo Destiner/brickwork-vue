@@ -49,14 +49,9 @@ import {
   TransitionRoot,
 } from '@headlessui/vue';
 
-defineProps({
-  isOpen: {
-    type: Boolean,
-    required: true,
-  },
-});
+defineProps<{ isOpen: boolean }>();
 
-const emit = defineEmits(['close']);
+const emit = defineEmits<{ (e: 'close'): void }>();
 
 function close(): void {
   emit('close');

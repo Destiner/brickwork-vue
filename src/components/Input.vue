@@ -19,22 +19,22 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue';
 
-defineProps({
-  modelValue: {
-    type: String,
-    required: true,
+withDefaults(
+  defineProps<{
+    modelValue: string;
+    label: string;
+    placeholder: string;
+  }>(),
+  {
+    label: '',
+    placeholder: '',
   },
-  label: {
-    type: String,
-    default: '',
-  },
-  placeholder: {
-    type: String,
-    default: '',
-  },
-});
+);
 
-const emit = defineEmits(['init', 'update:modelValue']);
+const emit = defineEmits<{
+  (e: 'init', value: HTMLInputElement): void;
+  (e: 'update:modelValue', value: string): void;
+}>();
 
 onMounted(() => {
   emit('init', input.value);

@@ -30,20 +30,15 @@
 
 <script setup lang="ts">
 import { RadioGroup, RadioGroupLabel, RadioGroupOption } from '@headlessui/vue';
-import { PropType } from 'vue';
 
-defineProps({
-  modelValue: {
-    type: String,
-    required: true,
-  },
-  options: {
-    type: Array as PropType<Option[]>,
-    required: true,
-  },
-});
+defineProps<{
+  modelValue: string;
+  options: Option[];
+}>();
 
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: Option): void;
+}>();
 
 function handleUpdate(newValue: Option): void {
   emit('update:modelValue', newValue);

@@ -31,16 +31,10 @@
 
 <script setup lang="ts">
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
-import { PropType } from 'vue';
 
-defineProps({
-  options: {
-    type: Array as PropType<Option[]>,
-    required: true,
-  },
-});
+defineProps<{ options: Option[] }>();
 
-const emit = defineEmits(['select']);
+const emit = defineEmits<{ (e: 'select', value: string): void }>();
 
 function handleClick(value: string): void {
   emit('select', value);

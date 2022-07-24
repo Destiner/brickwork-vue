@@ -40,18 +40,17 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-const props = defineProps({
-  modelValue: {
-    type: Boolean,
-    required: true,
+const props = withDefaults(
+  defineProps<{
+    modelValue: boolean;
+    label: string;
+  }>(),
+  {
+    label: '',
   },
-  label: {
-    type: String,
-    default: '',
-  },
-});
+);
 
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits<{ (e: 'update:modelValue', value: boolean): void }>();
 
 const id = computed(() => `checkbox-${Math.random().toString().substring(2)}`);
 const dataState = computed(() => (props.modelValue ? 'checked' : 'unchecked'));

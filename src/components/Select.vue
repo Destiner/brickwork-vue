@@ -74,24 +74,22 @@ import {
   ListboxOptions,
   ListboxOption,
 } from '@headlessui/vue';
-import { PropType, computed } from 'vue';
+import { computed } from 'vue';
 
-const props = defineProps({
-  modelValue: {
-    type: String,
-    required: true,
+const props = withDefaults(
+  defineProps<{
+    modelValue: string;
+    options: Option[];
+    label: string;
+  }>(),
+  {
+    label: '',
   },
-  options: {
-    type: Array as PropType<Option[]>,
-    required: true,
-  },
-  label: {
-    type: String,
-    default: '',
-  },
-});
+);
 
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: string): void;
+}>();
 
 const id = computed(() => `select-${Math.random().toString().substring(2)}`);
 
