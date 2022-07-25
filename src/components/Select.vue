@@ -201,7 +201,7 @@ label {
   display: flex;
   position: relative;
   align-items: center;
-  padding: var(--padding-item, 0 12px);
+  padding: var(--padding-item, 4px);
   gap: var(--gap-item, 6px);
   border-radius: var(--border-radius-item, 4px);
   color: var(--color-item, #540502);
