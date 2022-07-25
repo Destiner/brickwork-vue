@@ -135,10 +135,9 @@
           </Button>
           <Dialog
             :is-open="isDialogAOpen"
-            class="dialog-a"
             @close="closeDialogA"
           >
-            <div class="dialog-content-a">
+            <div class="dialog-a">
               <h1>Constantinople</h1>
               <div>
                 The capital of the Roman/Byzantine Empire, the Latin Empire, and
@@ -159,10 +158,9 @@
           </Button>
           <Dialog
             :is-open="isDialogBOpen"
-            class="dialog-b"
             @close="closeDialogB"
           >
-            <div class="dialog-content-b">
+            <div class="dialog-b">
               <h1>Constantinople</h1>
               <div>
                 The capital of the Roman/Byzantine Empire, the Latin Empire, and
@@ -183,10 +181,9 @@
           </Button>
           <Dialog
             :is-open="isDialogCOpen"
-            class="dialog-c"
             @close="closeDialogC"
           >
-            <div class="dialog-content-c">
+            <div class="dialog-c">
               <h1>Constantinople</h1>
               <div>
                 The capital of the Roman/Byzantine Empire, the Latin Empire, and
@@ -351,17 +348,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dialog-a,
+.dialog-b,
+.dialog-c {
+  width: 400px;
+}
+
+.dialog-a {
+  background: white;
+}
+
 .dialog-b {
-  --background-backdrop: #e6594060;
-  --padding: 32px;
-  --border-radius: 24px;
-  --background: #fff6f5;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff6f5;
 }
 
 .dialog-c {
-  --padding: 8px;
-  --border-radius: 0;
-  --background: white;
+  padding: 8px;
+  border-radius: 0;
+  background: white;
 }
 </style>
 
@@ -399,12 +405,14 @@ h2 {
   --box-shadow: none;
   --box-shadow-hover: #e65940c0 0 2px 10px;
   --color: white;
+  --color-hover: white;
 }
 
 .button-c {
   --background: black;
   --background-hover: #222;
   --color: white;
+  --color-hover: white;
   --border-radius: 0;
   --box-shadow: none;
   --box-shadow-hover: none;
