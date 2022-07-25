@@ -226,3 +226,25 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--line-height-item**: item line height
   - **--background-item-active**: active item background color
   - **--color-item-active**: active item color
+
+### Accordion
+
+- Props
+  - **:items**: list of displayed items
+- Styling props
+  - **--gap**: gap between items
+  - **--padding**: wrapper padding
+  - **--border-radius**: wrapper border radius
+  - **--background**: wrapper background
+  - **--height-divider**: item divider vertial size
+  - **--background-divider**: item divider color
+  - **--padding-button**: button padding
+  - **--border-radius-button**: button border radius
+  - **--background-button**: button background
+  - **--color-button**: button color
+  - **--font-size-button**: button font size
+  - **--background-button-hover**: button background on hover
+  - **--padding-panel**: content panel padding
+  - **--background-panel**: content panel background
+  - **--color-panel**: content panel color
+  - **--font-size-panel**: content panel font size
