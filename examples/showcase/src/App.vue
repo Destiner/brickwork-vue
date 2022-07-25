@@ -229,10 +229,7 @@
   </div>
 </template>
 
-<script
-  setup
-  lang="ts"
->
+<script setup lang="ts">
 import {
   Button,
   Checkbox,
@@ -492,11 +489,11 @@ h2 {
   --border-list: 4px solid tomato;
   --border-radius-list: 16px;
   --background-list: white;
-  --padding-item: 2px 8px;
+  --padding-item: 8px;
   --gap-item: 8px;
   --border-radius-item: 4px;
   --color-item: tomato;
-  --font-size-item: 12px;
+  --font-size-item: 16px;
   --font-weight-item: 400;
   --background-item-active: tomato;
   --color-item-active: white;
@@ -546,11 +543,11 @@ h2 {
   --border-list: 4px solid tomato;
   --border-radius-list: 16px;
   --background-list: white;
-  --padding-item: 2px 8px;
+  --padding-item: 8px;
   --gap-item: 8px;
   --border-radius-item: 4px;
   --color-item: tomato;
-  --font-size-item: 12px;
+  --font-size-item: 16px;
   --font-weight-item: 400;
   --background-item-active: tomato;
   --color-item-active: white;
