@@ -1,6 +1,22 @@
 # Brickwork
 
-Customizable and accessible UI components with sane defaults for Vue 3.
+_Unstyled Vue 3 UI components for your design system._
+
+Brickwork is a set of unstyled, accessible components to be used as a baseline for your custom UI kit. Brickwork handles all the low-level plumbing so you can focus on look and feel.
+
+Currently, following components are available:
+
+- Button
+- Checkbox
+- Switch
+- Dialog
+- Input
+- RadioGroup
+- Select
+- Dropdown
+- Accordion
+- Tabs (_soon_)
+- Popover (_soon_)
 
 ## Demo
 
