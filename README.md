@@ -2,7 +2,7 @@
 
 _Unstyled Vue 3 UI components for your design system._
 
-Brickwork is a set of unstyled, accessible components to be used as a baseline for your custom UI kit. Brickwork handles all the low-level plumbing so you can focus on look and feel.
+Brickwork is a set of unstyled, accessible components to be used as a baseline for your custom UI kit. Brickwork handles all the low-level plumbing so you can focus on look and feel. No more figuring out how to make a custom checkbox!
 
 Currently, following components are available:
 
