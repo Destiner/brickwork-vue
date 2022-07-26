@@ -1,6 +1,6 @@
 {
   "name": "brickwork-vue",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "description": "Customizable and accessible UI components with sane defaults for Vue 3",
   "author": "Timur Badretdinov <destinerx@gmail.com>",
   "keywords": [
