@@ -83,6 +83,22 @@ In most cases, styling props follow `--{property_name}-{component_part}-{compone
   - **--font-size-label**: label font size
   - **--font-weight-label**: label font weight
 
+### Switch
+
+- Model
+  - **v-model**: switch state
+- Props
+  - **:label**: [optional] switch label
+- Styling props
+  - **--width**: switch width
+  - **--height**: switch height
+  - **--background**: switch background
+  - **--box-shadow**: switch box shadow
+  - **--background-hover**: switch background on hover
+  - **--size-thumb**: switch thumb width and height
+  - **--color-thumb**: switch thumb color
+  - **--box-shadow-thumb**: switch thumb box shadow
+
 ### Dialog
 
 - Props
