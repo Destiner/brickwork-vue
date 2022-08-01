@@ -37,6 +37,9 @@ const emit = defineEmits<{
 }>();
 
 onMounted(() => {
+  if (!input.value) {
+    return;
+  }
   emit('init', input.value);
 });
 
